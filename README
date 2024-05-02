@@ -1,0 +1,14 @@
+Classes:
+    - DataGenerator: generates base data to perform analysis on. 
+        Constructor takes 2 parameters: 
+            int numCustomers: number of customer_codes (represents amount of data)
+            string path: path to where files will be generated
+
+    - DataExtractor: Extracts data from the files creates by the DataGenerator class.
+        Constructor takes 3 parameters:
+            string preselectedCustomers: path to file of preselected customers that will be extracted from the data set
+            string outputFilePath: path to where output files will generate
+            string inputFilePath: path to where input files reside
+
+To compile: g++ -o main main.cpp DataGenerator.cpp DataExtractor.cpp
+To run: ./main
